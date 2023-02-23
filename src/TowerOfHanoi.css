@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600;800&display=swap');
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+
+  font-family: 'Poppins', sans-serif;
+}
+
+.box-container {
+  height: auto;
+  width: auto;
+  margin: auto;
+}
+
+h1 {
+  text-align: center;
+  padding: 20px;
+  
+}
+
+.container {
+ 
+  max-width: 800px;
+  margin: auto;
+  text-align: center;
+  font-size: 1.2em;
+  padding: 50px 140px 50px 140px;
+  box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+  border-radius: 20px;
+}
+
+.game {
+
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  margin-bottom: 40px;
+
+
+}
+
+@media only screen and (max-width: 900px) {
+  .game {
+    display: flex;
+
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+   
+    align-items: center;
+  }
+  .container{
+    padding: 20px;
+  }
+}
+
+.tower {
+  width: 2%;
+  height: 300px;
+  background-color: #947237;
+  border-radius: 10px 10px 0px 0px;
+
+  display: flex;
+
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.label {
+  margin-bottom: 5px;
+}
+
+.disk {
+  width: 100px;
+  height: 30px;
+
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 15px 10px 15px 10px ;
+  border-radius: 10px;
+  cursor: move;
+  position: absolute;
+  bottom: 0;
+}
+
+.disk:nth-child(1) {
+  width: 100%;
+}
+
+.controls {
+ 
+  display: flex;
+  justify-content: space-between;
+
+  align-items: center;
+}
+
+.controls>* {
+  margin-right: 10px;
+}
+
+.num-moves {
+  margin-top: 10px;
+ font-size: 15px;
+}
+
+.disk {
+  position: relative;
+}
+
+.disk>span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.sahig {
+  position: absolute;
+  width: 14rem;
+  border-radius: 10px;
+  height: 20px;
+
+  background-color: #947237;
+
+  bottom: -20px;
+}
+.game-won {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: green;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  animation: pop-up 0.5s ease-out;
+}
+
+@keyframes pop-up {
+  0% {
+    transform: scale(0.5);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+.number{
+  font-size: 15px;
+  margin-right: 4px;
+}
+select{
+  border:none;
+  outline: none;
+  background-color: #707070;
+  color: #fff;
+  padding: 4px 10px 4px 10px;
+  border-radius: 4px;
+}
+.button-2{
+  display: flex;
+  gap: 20px;
+
+  
+}
+.button-2 button{
+  border: none;
+  outline: none;
+  padding: 4px 10px 4px 10px;
+  font-size: 15px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.button-2 .move{
+  background-color: #d82727;
+  color:#fff;
+  padding: 5px 22px 5px 22px;
+}
+
+.button-2 .reset{
+  background-color: #707070;
+  color: #fff;
+  padding: 5px 22px 5px 22px;
+}
+
+.music{
+ margin-top:20px;
+ display: flex;
+ justify-content: center;
+ gap:20px
+
+}
